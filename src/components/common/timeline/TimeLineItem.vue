@@ -4,31 +4,29 @@
       <el-timeline>
         <el-timeline-item timestamp="2018/4/12" placement="top" class>
           <el-card class="card">
-            <a href="#">
-              <h2>SSH原理与使用详解</h2>
-            </a>
+            <div class="title" @click="showArticle">
+              <h2>前端路由的原理</h2>
+            </div>
             <div class="label">
               <i class="el-icon-date"></i>
-              <span>时间</span>
+              <span>2019/01/12</span>
               <i class="el-icon-folder-opened"></i>
-              <span>类型</span>
+              <span>小总结</span>
               <i class="el-icon-discount"></i>
-              <span>标签</span>
+              <span>javascript</span>
             </div>
             <div class="content">
-              <h4>Ubuntu笔记本电脑使用SSH连接Arch树莓派</h4>
+              <h4>前端路由是如何做到URL和内容进行映射的呢</h4>
               <el-divider class="borderline"></el-divider>
             </div>
           </el-card>
         </el-timeline-item>
-      </el-timeline>
-
-      <el-timeline>
+        
         <el-timeline-item timestamp="2018/4/12" placement="top" class>
           <el-card class="card">
-            <a href="#">
+            <div class="title">
               <h2>还在使用"../../../../../../../../"?</h2>
-            </a>
+            </div>
             <div class="label">
               <i class="el-icon-date"></i>
               <span>时间</span>
@@ -50,7 +48,13 @@
 
 <script>
 export default {
-  name: "TimeLineItem"
+  name: "TimeLineItem",
+  methods:{
+    showArticle(){
+      this.$router.push('/article').catch(err => {console.log(err)})
+      console.log("this is article");
+    }
+  }
 };
 </script>
 
@@ -61,15 +65,16 @@ export default {
 .card {
   border-radius: 20px;
 }
-.card a {
-  text-decoration: none;
+.title h2:hover{
+  cursor: pointer;
+  color:#38b7ea;
 }
 .card h2 {
   color: #565a5f;
 }
-.card a h2:hover {
+/* .card a h2:hover {
   color: #38b7ea;
-}
+} */
 .label :nth-child(n + 0) {
   font-size: 16px;
   padding-left: 3px;

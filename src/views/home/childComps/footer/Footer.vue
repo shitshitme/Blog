@@ -48,11 +48,11 @@
           <h4>联系方式</h4>
           <div class="way">
             <img src="@/assets/img/footer/qq.svg" alt />
-            <h5 class="title">Wechat: v31426535</h5>
+            <h5 class="title">QQ: 1305681751</h5>
           </div>
           <div class="way">
             <img src="@/assets/img/footer/wechat.svg" alt />
-            <h5 class="title">QQ: 1305681751</h5>
+            <h5 class="title">Wechat: v31426535</h5>
           </div>
           <div class="way">
             <img src="@/assets/img/footer/qqmail.svg" alt />

@@ -3,7 +3,7 @@
     <div type="text" @click="centerDialogVisible = true" class="title">关于我</div>
 
     <el-dialog title="提示" :visible.sync="centerDialogVisible" width="30%" :center="true">
-      <h3 class="content">好奇心会害死猫</h3>
+      <h3 class="content">该功能正在开发中...</h3>
       <span slot="footer" class="dialog-footer">
         <el-button @click="centerDialogVisible = false">取 消</el-button>
         <el-button type="primary" @click="centerDialogVisible = false">确 定</el-button>

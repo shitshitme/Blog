@@ -45,8 +45,8 @@ export default {
   display: inline-block;
   position: fixed;
   width: 4%;
-  right: 450px;
-  top: 90%;
+  right: 150px;
+  top: 80%;
   z-index: 999;
 }
 </style>

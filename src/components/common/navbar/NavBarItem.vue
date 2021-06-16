@@ -8,11 +8,9 @@
 <script>
 export default {
   name: "NavBarItem",
-
   props: {
     path: String
   },
-
   methods: {
     itemClick() {
       this.$router.push(this.path).catch(err => {});

@@ -1,6 +1,6 @@
 <template>
   <div id="time-line">
-    <TimeLineItem></TimeLineItem>
+    <TimeLineItem/>
     <Page class="timeline-page" :total="100"></Page>
   </div>
 </template>

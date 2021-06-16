@@ -1,8 +1,8 @@
-import { request } from './request'
+import { request } from "./request";
 
 export function PostBlog() {
-	return request({
-		url: "/posts",
-		method: "POST"
-	})
+    return request({
+        url: "/articleget",
+        method: "GET",
+    });
 }
